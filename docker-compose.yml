@@ -19,7 +19,7 @@ services:
       - atendemax-network
 
   backend:
-    build: ./backend
+    image: anaoliveira33/atendemax-backend:latest
     container_name: atendemax-backend
     ports:
       - "8000:8000"
@@ -32,7 +32,7 @@ services:
       - atendemax-network
 
   frontend:
-    build: ./frontend
+    image: anaoliveira33/atendemax-frontend:latest
     container_name: atendemax-frontend
     ports:
       - "5500:80"
